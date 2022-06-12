@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="gallery.css">
+        <script type="text/javascript" src="gallery.js"></script>
+        <meta name="description" content="7 cudów świata">
+        <meta name="author" content="Krzysztof Kolasiński">
+        <meta name="generator" content="Visual Studio Code"> 
+        <title>Machu Picchu</title>
+    </head>
+    <body>
+        <header>
+            <img src="./photos/baner/baner_machu_picchu.png" alt="baner" id="baner">
+        </header>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar"><a class="navbar active" href="index.html">Strona główna</a></li>
+                <li class="navbar"><a class="navbar" href="sub1.html">Wielki Mur Chiński</a></li>
+                <li class="navbar"><a class="navbar" href="sub2.html">Petra</a></li>
+                <li class="navbar"><a class="navbar" href="sub3.html">Statua Chrystusa</a></li>
+                <li class="navbar"><a class="navbar" href="sub4.html">Machu Picchu</a></li>
+                <li class="navbar"><a class="navbar" href="sub5.html">Chichen Itza</a></li>
+                <li class="navbar"><a class="navbar" href="sub6.html">Koloseum</a></li>
+                <li class="navbar"><a class="navbar" href="sub7.html">Tadz Mahal</a></li>
+            </ul>
+        </nav>
+        <br />
+        <article>
+            <p><b>Machu Picchu</b> – najlepiej zachowane miasto Inków, w odległości 112 km od Cuzco. Położone jest na wysokości 2090–2400 m n.p.m., na przełęczy między Huayna Picchu a Machu Picchu w peruwiańskich Andach. Poniżej płynie rzeka Urubamba.</p>
+            <p>Miasto zbudowano w II połowie XV wieku podczas panowania jednego z najwybitniejszych władców Pachacuti Inca Yupanqui (1438–1471).</p>
+            <p>Pełniło wówczas funkcję głównego centrum ceremonialnego, ale także gospodarczego i obronnego. Zamieszkiwali je kapłani, przedstawiciele inkaskiej arystokracji, żołnierze oraz opiekunowie tamtejszych świątyń.</p>
+            <p>Miasto składało się z dwóch części. W górnej, zwanej hanman, znajdowały się: świątynia słońca, grobowiec królewski, pałac królewski i Intihuatana.</p>
+            <p>Na stromych zboczach otaczających miasto były tarasy uprawne o szerokości od 2 do 4 m, z pionowymi ścianami między nimi wzniesionymi z kamieni.</p>
+        </article>
+        <aside>
+            <p><b>Dowiedz się więcej:</b></p>
+            <ul class="aside">
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://pl.wikipedia.org/wiki/Machu_Picchu">Wikipedia</a></li>
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://www.budowle.pl/budowla/machu-picchu">Budowle.pl</a></li>
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://www.polskieradio.pl/39/156/Artykul/894529,Machu-Picchu-%e2%80%93-najbardziej-tajemnicze-miasto-swiata">Polskie Radio</a></li>
+            </ul>
+        </aside>
+        <hr style="clear: both;" />
+        <!-- ciąć jak coś na doł-->
+        <div class="row">
+        <div class="column">
+            <img src="./photos/machu_picchu/machu1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        <div class="column">
+            <img src="./photos/machu_picchu/machu2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        <div class="column">
+            <img src="./photos/machu_picchu/machu3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        <div class="column">
+            <img src="./photos/machu_picchu/machu4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        </div>
+
+        <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <img src="./photos/machu_picchu/machu1.jpg" style="width:100%" alt="photo">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./photos/machu_picchu/machu2.jpg" style="width:100%" alt="photo">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./photos/machu_picchu/machu3.jpg" style="width:100%" alt="photo">
+                </div>
+                
+                <div class="mySlides">
+                    <img src="./photos/machu_picchu/machu4.jpg" style="width:100%" alt="photo">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/machu_picchu/machu1.jpg" style="width:100%; height: 200px;" onclick="currentSlide(1)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/machu_picchu/machu2.jpg" style="width:100%; height: 200px;" onclick="currentSlide(2)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/machu_picchu/machu3.jpg" style="width:100%; height: 200px;" onclick="currentSlide(3)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/machu_picchu/machu4.jpg" style="width:100%; height: 200px;" onclick="currentSlide(4)" alt="">
+                </div>
+            </div>
+        </div>
+        <hr />
+        <footer><p>Autor: <a href="autor.html" rel="noopener" target="_blank">Krzysztof Kolasiński</a></p></footer>
+    </body>
+</html>

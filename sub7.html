@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="gallery.css">
+        <script type="text/javascript" src="gallery.js"></script>
+        <meta name="description" content="7 cudów świata">
+        <meta name="author" content="Krzysztof Kolasiński">
+        <meta name="generator" content="Visual Studio Code"> 
+        <title>Tadz Mahal</title>
+    </head>
+    <body>
+        <header>
+            <img src="./photos/baner/baner_tadz_mahal.png" alt="baner" id="baner">
+        </header>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar"><a class="navbar active" href="index.html">Strona główna</a></li>
+                <li class="navbar"><a class="navbar" href="sub1.html">Wielki Mur Chiński</a></li>
+                <li class="navbar"><a class="navbar" href="sub2.html">Petra</a></li>
+                <li class="navbar"><a class="navbar" href="sub3.html">Statua Chrystusa</a></li>
+                <li class="navbar"><a class="navbar" href="sub4.html">Machu Picchu</a></li>
+                <li class="navbar"><a class="navbar" href="sub5.html">Chichen Itza</a></li>
+                <li class="navbar"><a class="navbar" href="sub6.html">Koloseum</a></li>
+                <li class="navbar"><a class="navbar" href="sub7.html">Tadz Mahal</a></li>
+            </ul>
+        </nav>
+        <br />
+        <article>
+           <p><b>Tadź Mahal</b> – indyjskie mauzoleum wzniesione przez Szahdżahana z dynastii Wielkich Mogołów, na pamiątkę przedwcześnie zmarłej, ukochanej żony Mumtaz Mahal. Obiekt bywa nazywany świątynią miłości.</p>
+           <p>Tadź Mahal został wzniesiony w Agrze, mieście nad rzeką Jamuna, w indyjskim stanie Uttar Pradesh. Agra leży w odległości około 200 kilometrów od Delhi – dawnej stolicy Indii. Jest to jeden z głównych punktów wielu wycieczek zagranicznych.</p>
+           <p>Kompleks budowlany Tadź Mahal składa się z głównego mauzoleum z wielką kopułą, w kształcie cebuli, charakterystyczną dla sztuki islamu, i olbrzymią bramą, symbolizującą wrota do Raju.</p>
+           <p>Jest ona osadzona na plincie, w której rogach stoją cztery minarety – wieże, z których muezin nawołuje wiernych do modlitwy.</p>
+           <p>Po bokach stoją dwa identyczne meczety z czerwonego kamienia. Uzupełnieniem kompleksu są standardowe elementy tego typu budowli: kanały wodne oraz podzielony na cztery części ogród krajobrazowy.</p>
+           <p>Konstrukcja ogrodu perskiego przed mauzoleum imituje muzułmańskie wyobrażenie raju, które cechuje duże podobieństwo do jego chrześcijańskiego odpowiednika.</p>
+        </article>
+        <aside>
+            <p><b>Dowiedz się więcej:</b></p>
+            <ul class="aside">
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://pl.wikipedia.org/wiki/Tad%C5%BA_Mahal">Wikipedia</a></li>
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://www.budowle.pl/budowla/tadz-mahal">Budowle.pl</a></li>
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://www.itaka.pl/blog/podroze/azja/indie/tadz-mahal-milosc-zakleta-w-marmurze/">Itaka</a></li>
+            </ul>
+        </aside>
+        <hr style="clear: both;" />
+        <!-- ciąć jak coś na doł-->
+        <div class="row">
+        <div class="column">
+            <img src="./photos/tadz_mahal/tadz1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        <div class="column">
+            <img src="./photos/tadz_mahal/tadz2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        <div class="column">
+            <img src="./photos/tadz_mahal/tadz3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        <div class="column">
+            <img src="./photos/tadz_mahal/tadz4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        </div>
+
+        <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <img src="./photos/tadz_mahal/tadz1.jpg" style="width:100%" alt="photo">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./photos/tadz_mahal/tadz2.jpg" style="width:100%" alt="photo">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./photos/tadz_mahal/tadz3.jpeg" style="width:100%" alt="photo">
+                </div>
+                
+                <div class="mySlides">
+                    <img src="./photos/tadz_mahal/tadz4.jpg" style="width:100%" alt="photo">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/tadz_mahal/tadz1.jpg" style="width:100%; height: 200px;" onclick="currentSlide(1)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/tadz_mahal/tadz2.jpg" style="width:100%; height: 200px;" onclick="currentSlide(2)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/tadz_mahal/tadz3.jpeg" style="width:100%; height: 200px;" onclick="currentSlide(3)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/tadz_mahal/tadz4.jpg" style="width:100%; height: 200px;" onclick="currentSlide(4)" alt="">
+                </div>
+            </div>
+        </div>
+        <hr />
+        <footer><p>Autor: <a href="autor.html" rel="noopener" target="_blank">Krzysztof Kolasiński</a></p></footer>
+    </body>
+</html>

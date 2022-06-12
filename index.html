@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="form.css">
+        <script type="text/javascript" src="form.js"></script>
+        <title>7 cudów świata</title>
+    </head>
+    <body>
+        <header>
+            <img src="./photos/baner/baner_full.png" alt="baner" id="baner">
+        </header>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar"><a class="navbar active" href="index.html">Strona główna</a></li>
+                <li class="navbar"><a class="navbar" href="sub1.html">Wielki Mur Chiński</a></li>
+                <li class="navbar"><a class="navbar" href="sub2.html">Petra</a></li>
+                <li class="navbar"><a class="navbar" href="sub3.html">Statua Chrystusa</a></li>
+                <li class="navbar"><a class="navbar" href="sub4.html">Machu Picchu</a></li>
+                <li class="navbar"><a class="navbar" href="sub5.html">Chichen Itza</a></li>
+                <li class="navbar"><a class="navbar" href="sub6.html">Koloseum</a></li>
+                <li class="navbar"><a class="navbar" href="sub7.html">Tadz Mahal</a></li>
+            </ul>
+        </nav>
+        <br />
+        <article>
+            <p><b>Siedem nowych cudów świata</b> – proponowana wersja współczesnej listy siedmiu cudów świata, której tworzeniem zajęła się szwajcarska firma New Open World Corporation (NOWC).</p>
+            <p>Lista została ogłoszona 7 lipca 2007 roku w Lizbonie na stadionie Estádio da Luz o godzinie 21:30 czasu lokalnego.</p>
+            <p>Finałowe głosowanie trwało od 1 stycznia 2006 do 6 lipca 2007, w tym czasie zostało oddanych ponad 90 mln głosów.</p>
+            <br />
+            <table class="center">
+                <tr>
+                    <th>Nowy cud świata</th>
+                    <th>Kraj</th>
+                </tr>
+                <tr>
+                    <td>Wielki Mur Chiński</td>
+                    <td>Chiny</td>
+                </tr>
+                <tr>
+                    <td>Petra</td>
+                    <td>Jordania</td>
+                </tr>
+                <tr>
+                    <td>Statua Chrystusa</td>
+                    <td>Brazylia</td>
+                </tr>
+                <tr>
+                    <td>Machu Picchu</td>
+                    <td>Peru</td>
+                </tr>
+                <tr>
+                    <td>Chichen Itza</td>
+                    <td>Meksyk</td>
+                </tr>
+                <tr>
+                    <td>Koloseum</td>
+                    <td>Włochy</td>
+                </tr>
+                <tr>
+                    <td>Tadz Mahal</td>
+                    <td>Indie</td>
+                </tr>
+
+            </table>
+        </article>
+        <aside>
+            <p><b>Dowiedz się więcej:</b></p>
+            <ul class="aside">
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://pl.wikipedia.org/wiki/Nowe_siedem_cud%C3%B3w_%C5%9Bwiata">Wikipedia</a></li>
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://cudaswiata.pl/nowe-siedem-cudow-swiata/">Cuda Świata</a></li>
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://zorientowani.pl/aktualnosci/czytaj,42,7-nowych-cudow-swiata.html">Zorientowani.pl</a></li>
+            </ul>
+        </aside>
+
+        <button class="open-button" onclick="openForm()">Ankieta</button>
+        <div class="form-popup" id="myForm">
+
+        <form name="ankieta" action="#" class="form-container">
+            <h1>Ankieta</h1>
+
+            <label for="name"><b>Imię:</b></label>
+            <input type="text" placeholder="Twoje imię" name="name" required>
+
+            <label for="opinion"><b>Opinia:</b></label><br />
+            <textarea name="opinion" rows="10" cols="35" placeholder="Co sądzisz o mojej stronie?" required></textarea>
+
+            <button type="submit" class="btn">Wyślij</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Zamknij</button>
+        </form>
+        </div>
+        <footer><p>Autor: <a href="autor.html" rel="noopener" target="_blank">Krzysztof Kolasiński</a></p></footer>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="gallery.css">
+        <script type="text/javascript" src="gallery.js"></script>
+        <meta name="description" content="7 cudów świata">
+        <meta name="author" content="Krzysztof Kolasiński">
+        <meta name="generator" content="Visual Studio Code"> 
+        <title>Statua Chrystusa</title>
+    </head>
+    <body>
+        <header>
+            <img src="./photos/baner/baner_statua.png" alt="baner" id="baner">
+        </header>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar"><a class="navbar active" href="index.html">Strona główna</a></li>
+                <li class="navbar"><a class="navbar" href="sub1.html">Wielki Mur Chiński</a></li>
+                <li class="navbar"><a class="navbar" href="sub2.html">Petra</a></li>
+                <li class="navbar"><a class="navbar" href="sub3.html">Statua Chrystusa</a></li>
+                <li class="navbar"><a class="navbar" href="sub4.html">Machu Picchu</a></li>
+                <li class="navbar"><a class="navbar" href="sub5.html">Chichen Itza</a></li>
+                <li class="navbar"><a class="navbar" href="sub6.html">Koloseum</a></li>
+                <li class="navbar"><a class="navbar" href="sub7.html">Tadz Mahal</a></li>
+            </ul>
+        </nav>
+        <br />
+        <article>
+            <p><b>Statua Chrystusa Zbawiciela</b> – 38-metrowy pomnik Jezusa Chrystusa wzniesiony na szczycie granitowej góry Corcovado w Rio de Janeiro w Brazylii. Statua jest jednym z symboli Rio oraz imponującym i charakterystycznym obiektem w tym mieście.</p>
+            <p>W 1921 r. rozpoczęła się zbiórka pieniędzy na budowę pomnika, który miał upamiętnić setną rocznicę niepodległości Brazylii. Rozważano kilka projektów, między innymi gigantyczny krzyż czy postać Boga z kulą ziemską w dłoni.</p>
+            <p>Ostatecznie wybrano pomysł Hektora da Silvy, którego olbrzymia statua Chrystusa z rozpostartymi ramionami obejmującymi zarówno miasto jak i witająca przybywających gości od morza spodobała się najbardziej.</p>
+            <p>Pieniądze zebrano w kościołach całej Brazylii. Sam pomnik został zaprojektowany przez brazylijskiego architekta Heitora da Silva Costa oraz francuskiego rzeźbiarza polskiego pochodzenia Paula Landowskiego.</p>
+            <p>Statua mierzy 30 metrów wysokości i jest postawiona na 8-metrowym cokole. Głowa ma 3,5 metra wysokości, a odległość między końcami palców rąk wynosi 28 metrów.</p>
+            <p>Do pomnika można dotrzeć drogą lub kolejką zębatą. Ze stacji kolejki do punktu obserwacyjnego u stóp pomnika można dojść schodami o 222 stopniach, dojechać windą lub schodami ruchomymi.</p>
+        </article>
+        <aside>
+            <p><b>Dowiedz się więcej:</b></p>
+            <ul class="aside">
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://pl.wikipedia.org/wiki/Statua_Chrystusa_Zbawiciela_w_Rio_de_Janeiro">Wikipedia</a></li>
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://www.budowle.pl/budowla/statua-chrystusa-zbawiciela">Budowle.pl</a></li>
+                <li class="aside"><a class="aside" rel="noopener" target="_blank" href="https://podroze.onet.pl/aktualnosci/90-lat-figury-chrystusa-odkupiciela-w-rio-de-janeiro-brazylia/kvdhb9n">Evitravel</a></li>
+            </ul>
+        </aside>
+        <hr style="clear: both;" />
+        <!-- ciąć jak coś na doł-->
+        <div class="row">
+        <div class="column">
+            <img src="./photos/statua/statua1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        <div class="column">
+            <img src="./photos/statua/statua2.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        <div class="column">
+            <img src="./photos/statua/statua3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        <div class="column">
+            <img src="./photos/statua/statua4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor gallery" alt="photo">
+        </div>
+        </div>
+
+        <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <img src="./photos/statua/statua1.jpg" style="width:100%" alt="photo">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./photos/statua/statua2.jpeg" style="width:100%" alt="photo">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./photos/statua/statua3.jpg" style="width:100%" alt="photo">
+                </div>
+                
+                <div class="mySlides">
+                    <img src="./photos/statua/statua4.jpg" style="width:100%" alt="photo">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/statua/statua1.jpg" style="width:100%; height: 200px;" onclick="currentSlide(1)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/statua/statua2.jpeg" style="width:100%; height: 200px;" onclick="currentSlide(2)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/statua/statua3.jpg"style="width:100%; height: 200px;" onclick="currentSlide(3)" alt="">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="./photos/statua/statua4.jpg" style="width:100%; height: 200px;" onclick="currentSlide(4)" alt="">
+                </div>
+            </div>
+        </div>
+        <hr />
+        <footer><p>Autor: <a href="autor.html" rel="noopener" target="_blank">Krzysztof Kolasiński</a></p></footer>
+    </body>
+</html>
